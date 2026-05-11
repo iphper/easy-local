@@ -1,0 +1,8 @@
+.vscode/
+.idea/
+vendor/
+*.log
+*.tmp
+*.bak
+*.cache
+config/*.json
