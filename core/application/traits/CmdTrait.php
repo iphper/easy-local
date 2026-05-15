@@ -2,6 +2,8 @@
 
 namespace Core\Application\Traits;
 
+use Kit\Terminal\Output\Colorizer\Facade as Colorizer;
+
 /**
  * 应用目录
  * @property string $root
@@ -28,8 +30,8 @@ trait CmdTrait
 
         $result = $this->runAction($path);
 
-        var_export($result);
-        echo PHP_EOL;
+        is_scalar($result) or ($result = json_encode($result, JSON_UNESCAPED_UNICODE));
+        echo Colorizer::fg("#00ff00")->text($result),PHP_EOL;
     }
 
     // 检查是否命令行模式

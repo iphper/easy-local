@@ -12,5 +12,7 @@
             "email": "igping@163.com"
         }
     ],
-    "require": {}
+    "require": {
+        "iphper/php-kit": "^0.1.0"
+    }
 }

@@ -4,8 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30a85b894f5f7dba6ae3ef1164e72167",
-    "packages": [],
+    "content-hash": "ede53425b9f0df84823e0a4a5834cc24",
+    "packages": [
+        {
+            "name": "iphper/php-kit",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iphper/php-kit.git",
+                "reference": "1e4a958863f561e6d3e95bac8abb28abacac7f47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iphper/php-kit/zipball/1e4a958863f561e6d3e95bac8abb28abacac7f47",
+                "reference": "1e4a958863f561e6d3e95bac8abb28abacac7f47",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "iphper",
+                    "email": "igping@163.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/iphper/php-kit/issues",
+                "source": "https://github.com/iphper/php-kit/tree/0.1.0"
+            },
+            "time": "2026-04-08T09:23:30+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -14,5 +48,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
