@@ -16,6 +16,7 @@ trait DirTrait
         'cache' => 'public'.DIRECTORY_SEPARATOR.'cache',
         'data' => 'public'.DIRECTORY_SEPARATOR.'data',
         'logs' => 'public'.DIRECTORY_SEPARATOR.'logs',
+        'view' => 'app'.DIRECTORY_SEPARATOR.'view',
     ];
 
     protected function initDirTrait()
@@ -56,4 +57,8 @@ trait DirTrait
         return $this->dir('data');
     }
 
+    public function viewDir()
+    {
+        return $this->dir('view');
+    }
 }

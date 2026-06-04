@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <div>{{ $name }}</div>
+    <ul>
+    {{ foreach ($list as $item) }}
+        <li>{{ $item }}</li>
+    {{ endforeach }}
+    </ul>
+    {{ if($b) }}
+        <div>This will not be displayed.</div>
+    {{ else }}
+        <div>This will be displayed.</div>
+    {{ endif }}
+    <div>{{ strtoupper($name) }}</div>
+</body>
+</html>

@@ -39,14 +39,19 @@ trait HttpTrait
             $result['trace'] = $e->getTrace();
         }
 
-        // 响应json数据
-        header('Content-Type: application/json; charset=utf-8');
-        
         // 设置状态码
         http_response_code($code);
 
-        // 响应数据
-        echo is_scalar($result) ? $result : json_encode($result, JSON_UNESCAPED_UNICODE);
+        // 非标量数据默认响应json
+        if (!is_scalar($result)) {
+            // 响应json数据
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($result, JSON_UNESCAPED_UNICODE);
+            return;
+        } else {
+            echo $result;
+            return;
+        }
 
     }
 
